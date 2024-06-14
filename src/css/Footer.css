@@ -1,0 +1,91 @@
+.footer-container{
+    
+    background-color: #141414;
+ width: 100%;
+
+}
+.footer-container .footer-top{
+    padding: 4rem 5vw;
+
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+}
+.footer-container .footer-top .row-1{
+    margin-left: 20px;
+}
+.footer-container .footer-top .row-1 .logo {
+    display: flex;
+}
+.footer-container .footer-top .row-1 .logo h3{
+    color: white;
+    margin: 15px  5px;
+}
+.footer-container .footer-top .row-1 .inputBox input{
+    height: 45px;
+    width: 330px;
+    background-color: #141414;
+    border: 1px solid #eee;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding-left: 40px;
+    position: relative;
+}
+.footer-container .footer-top .row-1 .inputBox input::placeholder{
+    color: white;
+
+}
+.footer-container .footer-top .row-1 .inputBox span.icon-1 {
+    color: white;
+    position: absolute;
+    top: 39.5%;
+    left: 100px;
+    z-index: 99;
+}
+.footer-container .footer-top .row-1 .inputBox span.icon-2{
+    color: white;
+    position: absolute;
+    top: 39.5%;
+    right: 71%;
+    z-index: 99;
+}
+.footer-container .footer-bottom{
+    background-color: #1a1a1a;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+}
+.footer-container .footer-bottom h3 {
+    color: white;
+    font-weight: 100;
+    font-size: 18px;
+}
+.footer-container .footer-bottom a.footer-terms {
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.footer-container .footer-bottom .bottom-links{
+    margin-left: 43%;
+}
+.footer-container .footer-bottom   a.bottom-socials{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    background-color: #141414;
+    padding: 10px;
+    border-radius: 58px;
+    text-align: center;
+}
+@media screen and (max-width: 700px){
+    .footer-container .footer-bottom{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-container .footer-bottom .bottom-links{
+margin: 10px 2%;
+    }
+}
