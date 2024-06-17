@@ -15,6 +15,7 @@
 #hero-section .hero-container .textBox {
   margin-top: 50px;
   margin-left: 7rem;
+  margin-right: 40px;
 }
 #hero-section .hero-container .textBox h1 {
   color: white;
@@ -43,9 +44,17 @@
   padding: 10px 15px;
   background-color: #703bf7;
   border-radius: 10px;
+  cursor: pointer;
+  transition: background 300ms;
 }
+#hero-section .hero-container .textBox .heroBtn :nth-child(2):hover{
+  border: #703bf7 1px solid;
+  background: none;
+}
+
 #hero-section .hero-container img {
-  width: 650px;
+  width: 585px;
+  height: 70vh;
 }
 #hero-section .heroBox {
   display: flex;
@@ -74,6 +83,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  margin: 40px 10px;
 }
 #feature-row .features {
   width: 300px;
@@ -97,7 +107,7 @@
   color: white;
   text-align: center;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   #hero-section .hero-container {
     display: flex;
     flex-direction: column-reverse;
@@ -108,7 +118,7 @@
   #hero-section .hero-container .textBox {
     margin-top: 1rem;
     position: static;
-    margin-left: 10px;
+    margin-left: 45px;
   }
   #hero-section .hero-container .textBox h1 {
     font-size: 28px;
@@ -127,18 +137,18 @@
     gap: 10px;
     align-items: center;
     justify-content: center;
-    margin-left: -1rem;
+    /* margin-left: 1rem; */
   }
   #hero-section .hero-container .textBox .heroBtn :nth-child(1) {
     display: inline-block;
-    width: 95%;
+    width:100%;
     text-align: center;
     height: 60px;
     padding: 15px 20px;
   }
   #hero-section .hero-container .textBox .heroBtn :nth-child(2) {
     display: inline-block;
-    width: 95%;
+    width: 102%;
     text-align: center;
     height: 60px;
     padding: 15px 20px;
@@ -146,8 +156,31 @@
   #hero-section .heroBox {
     display: grid;
     grid-template-columns: auto auto;
+    gap: 10px;
   }
-  #hero-section .heroBox :nth-child(3){
-  margin: 0;
+  #hero-section .heroBox :nth-child(3) {
+    margin: 0;
+  }
+  #feature-row {
+    display: grid;
+    grid-template-columns: repeat(2, 0.15fr);
+    border: 1px solid #999999;
+    width: 97%;
+    margin: 90% auto;
+    margin-bottom: 0;
+    padding: 20px 30px;
+    border-radius: 20px;
+  }
+  #feature-row .features {
+    width: 180px;
+  }
+  #feature-row .features div {
+    margin-top: 10px;
+  }
+  #feature-row .features div h3 {
+    font-size: 15px;
+  }
+  #feature-row .features div img {
+    width: 60px;
   }
 }

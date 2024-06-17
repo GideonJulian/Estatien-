@@ -6,13 +6,14 @@ import featureImg2 from "../assets/icon-3.png"
 import featureImg3 from "../assets/icon-4.png"
 import featureImg4 from "../assets/icon-1.png"
 import Properties from "../components/Properties";
+import Reviews from "../components/Reviews";
 const Home = () => {
   return (
     <div className="Home-container">
       <div className="hero">
         <Hero />
       </div>
-      {/* <div id="feature-row">
+      <div id="feature-row">
         <div className="features">
           <div>
             <img src={featureImg1} alt="" />
@@ -37,9 +38,12 @@ const Home = () => {
             <h3>Smart Investments, Informed Decisions</h3>
           </div>
         </div>
-      </div> */}
+      </div>
       <div className="properties-row">
-        {/* <Properties /> */}
+        <Properties />
+      </div>
+      <div className="review-row">
+        <Reviews />
       </div>
     </div>
   );

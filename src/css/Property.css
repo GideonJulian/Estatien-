@@ -1,0 +1,102 @@
+#property-section {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+#property-section .heading {
+  margin-bottom: 40px;
+  margin-left: 40px;
+}
+#property-section .card-container .card-2{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+#property-section .card {
+  width: 360px;
+  height: 480px;
+  border: 1px solid #999999;
+  border-radius: 10px;
+}
+
+#property-section .card .img-card {
+  width: 330px;
+  height: 250px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+#property-section .card .img-card img {
+  width: 100%;
+  height: 100%;
+  transition: transform 300ms;
+}
+#property-section .card .img-card img:hover{
+    transform: scale(1.1);
+}
+#property-section .card .desc {
+  margin-left: 10px;
+}
+#property-section .card .card-head {
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+}
+#property-section .card .desc .card-desc {
+  color: #999999;
+  margin-left: 10px;
+  font-size: 15px;
+}
+#property-section .card .desc div {
+  margin-top: 10px;
+  display: flex;
+}
+#property-section .card .desc div.room-features {
+  color: white;
+  border-radius: 20px;
+
+  border: hsl(0, 0%, 60%) 0.4px solid;
+  padding: 10px 10px;
+  margin: 0 0 10px 10px;
+}
+#property-section .card .desc div.room-features span {
+  margin-left: 5px;
+  font-size: 14px;
+}
+#property-section .card .card-bottom {
+    color: white;
+}
+#property-section .card .card-bottom div {
+    display: block;
+    margin-left: 10px;
+}
+#property-section .card .card-bottom button {
+    background-color: #703BF7;
+    border: none;
+    width: 160px;
+    margin-left: 80px;
+    color: white;
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background 300ms;
+}
+#property-section .card .card-bottom button:hover{
+    border:  1px solid #703BF7;
+    background: none;
+}
+#property-section .mySwiper{
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  #property-section .mySwiper{
+    display: block;
+   }
+   #property-section .card-container .card-2{
+    display: none;
+   }
+}
