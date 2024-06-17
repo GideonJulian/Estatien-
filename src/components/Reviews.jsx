@@ -6,9 +6,11 @@ import "../css/swiper.css";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import "../css/Review.css"
+import "../css/Review.css";
+
 import { ClientReview } from "../utils/PropertyDeatils";
- 
+import { FaStar } from "react-icons/fa";
+
 const Reviews = () => {
   return (
     <div id="Review-container">
@@ -28,12 +30,62 @@ const Reviews = () => {
       </div>
 
       <div className="card-container">
-        {
-          ClientReview.map((items)=> (
-            <div className="review-card"></div>
-          ))
-        }
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={0}
+          pagination={{
+            clickable: true,
+          }}
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 10
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 0
+
+            }
+
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          {ClientReview.map((items) => (
+            <SwiperSlide>
+              <div className="review-card">
+                <div className="stars">
+                  <span>
+                    <FaStar />
+                  </span>
+                  <span>
+                    <FaStar />
+                  </span>
+                  <span>
+                    <FaStar />
+                  </span>
+                  <span>
+                    <FaStar />
+                  </span>
+                  <span>
+                    <FaStar />
+                  </span>
+                </div>
+                <h3>{items.title}</h3>
+                <p>{items.experience}</p>
+                <div className="user">
+                  <img src={items.profile} alt="" />
+                  <div>
+                    <p>{items.name}</p>
+                    <span>{items.location}</span>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
+      
     </div>
   );
 };
