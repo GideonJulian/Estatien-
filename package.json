@@ -1,4 +1,5 @@
-{"homepage": "https://github.com/GideonJulian/Estatien-",
+{ "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
   "name": "estetien",
   "private": true,
   "version": "0.0.0",
