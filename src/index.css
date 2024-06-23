@@ -10,3 +10,200 @@ html{
 body {
   background-color: #141414;
 }
+
+#about-container {
+  width: 100%;
+
+
+}
+#about-container .about-hero{
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 7rem 9vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-container .about-hero .textbox h1{
+    color: white;
+}
+#about-container .about-hero .textbox p { 
+  color: white;
+  width: 600px;
+  margin-top: 10px;
+}
+#about-container .about-hero img {
+  width: 400px;
+  margin-left: 90px;
+}
+#about-container .heroBox {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+#about-container .about-hero .heroBox .box {
+  height: 100px;
+  width: 190px;
+  background-color: #262626;
+  padding: 20px 20px;
+  border-radius: 20px;
+  border: 1px solid #999999;
+}
+#about-container .about-hero .heroBox .box h3 {
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+}
+#about-container .value-section {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+ margin: 20px 40px;
+}
+
+#about-container .value-section .textBox h1{
+  color: white;
+}
+#about-container .value-section .textBox p{
+  color: white;
+  width: 350px;
+  font-size: 15px;
+}
+#about-container .value-section .values {
+  display: grid;
+  grid-template-columns: repeat(2, .15fr);
+  padding: 1.2rem ;
+  border: #999999 1px solid ;
+  border-radius: 10px;
+  gap: 20px;
+}
+#about-container .value-section .values .value .head {
+  display: flex;
+  align-items: center;
+}
+#about-container .value-section .values .value {
+  border-right: 1px solid #999999;
+  border-left: 1px solid #999999;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+#about-container .value-section .values .value .head img{
+  width: 60px;
+}
+#about-container .value-section .values .value .head h3{
+  color: white;
+  margin-left: 10px;
+}
+#about-container .value-section .values .value p {
+  color: white;
+  width: 340px;
+}
+
+/* ACHIEVEMENT SECTION */
+#achievement-section {
+  width: 100%;
+  margin-bottom: 30px;
+}
+#achievement-section .achieve-container{
+  margin-left: 90px;
+  margin-right: auto;
+  max-width: 1440px;
+  
+}
+#achievement-section .achieve-container .head h1{
+  color: white;
+}
+#achievement-section .achieve-container .head p{
+  color: white;
+  width: 90%;
+  font-size: 15px;
+}
+#achievement-section .achieve-container .achievements{
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+#achievement-section .achieve-container .achievements .box{
+  width: 350px;
+  height: 200px;
+  border: 1px solid #999999;
+  border-radius: 10px;
+  padding: 20px;
+}
+#achievement-section .achieve-container .achievements .box h3{
+  color: white;
+  margin: 25px 5px 20px;
+}
+#achievement-section .achieve-container .achievements .box  p{
+  color: white;
+  font-size: 14px;
+  margin-top: 10px 30px;
+}
+/* NAVIGATION SECTION */
+#navigation-section {
+  width: 100%;
+  margin-bottom: 30px;
+}
+#navigation-section .navigation-container{
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: 90px;
+
+}
+#navigation-section .navigation-container .head h1{
+  color: white;
+}
+#navigation-section .navigation-container   .head p{
+  color: white;
+  width: 90%;
+  font-size: 15px;
+}
+@media screen and (max-width: 700px){
+  #about-container .about-hero{
+    flex-direction: column-reverse;
+    padding: 2rem ;
+  }
+  #about-container .about-hero img {
+    width: 380px;
+    margin: 10px auto;
+  }
+  #about-container .about-hero .textbox {
+    margin: 10px auto 10px -17px;
+  }
+  #about-container .about-hero .textbox p{
+    width: 390px;
+  }
+  #about-container .about-hero .heroBox{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+  #about-container .value-section {
+    flex-direction: column;
+    margin: 10px;
+  }
+  #about-container .value-section .values {
+    display: grid;
+    grid-template-columns: repeat(1, .15fr);
+    padding: 1.5rem 1rem;
+    margin-top: 15px;
+
+  }
+  #about-container .value-section .values .value {
+    border: none;
+    border-bottom: 1px solid #999999;
+    padding-bottom: 10px;
+  }
+  /* ACHIEVEMNTS SECTION */
+  #achievement-section .achieve-container{
+    margin: 10px 15px;
+  }
+  #achievement-section .achieve-container .achievements{
+    flex-direction: column;
+  }
+  #achievement-section .achieve-container .achievements .box{
+    width: 385px;
+  }
+}
